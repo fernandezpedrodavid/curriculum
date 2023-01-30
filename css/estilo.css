@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #cfedf7;
+    padding: o 10px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+/**SECCION ENCABEZADO*/
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: #1b1bcc;
+    color: white;
+    border-radius: 10px;  
+}
+header h1{
+    margin-left: 20px;
+}
+header nav a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin: 20px;
+    width: auto;
+}
+header nav a:hover{
+    color: aqua;
+} 
+.nav-responsive{
+    font-size: 25px;
+    margin: 0 10px 0 50px;
+    color: #fff;
+    display: none;
+}
+/**SECCION INICIO*/
+#inicio{
+    background-color: #b5e4f3;
+    padding: 100px;
+    border-radius: 10px;
+}
+#inicio .fila{
+    display: flex;
+    align-items: center;
+}
+#inicio .fila .col .contenedor-img{
+    max-width: 500px;
+    width: fit-content;
+    margin: auto;
+}
+#inicio .fila .col .contenedor-img img{
+    width: 200px;
+    border-radius: 10px;
+}
+#inicio .fila .col{
+    width: 50%;
+}
+#inicio .fila .col h2{
+    margin: 10px;
+    text-transform: uppercase;
+}
+#inicio .fila .col li{
+    display: block;
+    margin: 20px;
+}
+#inicio .fila .col a{
+    display: block;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1b1bcc;
+    color: #fff;
+    border-radius: 10px;
+}
+#inicio .fila .col button{
+    display: inline-block;
+    border: none;
+    background: #1b1bcc;
+    color: #cfedf7;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+/**SECCION ESTUDIOS*/
+#estudios{
+    background-color: #b5e4f3;
+    padding: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#estudios .fila{
+    display: flex;
+    align-items: center;
+}
+#estudios .fila .col h3{
+    margin: 20px;
+    text-transform: uppercase;
+}
+#estudios .fila .col .uni{
+    display: block;
+    margin: 20px;
+}
+#estudios .fila .col .secun{
+    display: block;
+    margin: 20px;
+}
+#estudios .fila .col .prim{
+    display: block;
+    margin: 20px;
+}
+#estudios .fila .col button{
+    width: 100px;
+    display: inline-block;
+    border: none;
+    background: #1b1bcc;
+    color: #cfedf7;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+}
+#estudios .fila .col #certificado{
+    display: none;
+}
+#estudios .fila .col img{
+    height: 200px;
+    width: 200px;
+} 
+/**SECCION TRABAJOS*/
+#trabajos{
+    background-color: #b5e4f3;
+    padding: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#trabajos .fila{
+    display: flex;
+    align-items: center;
+}
+#trabajos .fila .col h3{
+    margin: 20px;
+    text-transform: uppercase;
+}
+#trabajos .fila .col .csj{
+    display: block;
+    margin: 20px;
+}
+/**SECCION OTROS*/
+#otros{
+    background-color: #b5e4f3;
+    padding: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#otros .fila .col h3{
+    margin: 20px;
+    text-transform: uppercase;
+}
+#otros .fila .col li{
+    display: block;
+    margin: 20px;
+}
+/**CONTACTO*/
+#contacto{
+    background-color: #b5e4f3;
+    padding: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#contacto h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+#contacto nav{
+    max-width: 900px;
+    background-color: #9ef0f0;
+    margin: auto;
+    font: 20px;
+    margin: 50px 0 20px;
+}
+#contacto .redes-h{
+   list-style: none; 
+   display: flex;
+   justify-content: space-around;
+}
+#contacto .redes-h > li:hover{
+    background-color: #00ffff;
+}
+#contacto .redes-h .info{
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+#contacto .redes-h li:hover .info{
+    display: block;
+}
+#contacto form{
+    max-width: 800px;
+    margin: auto;
+    background-color: #9ef0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+#contacto form .entrada{
+    margin-bottom: 30px;
+}
+#contacto form input{
+   background-color: transparent;
+   border: none;
+   border-bottom: 2px solid #389274;
+   width: 100%;
+   padding: 7px o;
+   outline: none;
+   color: #389274; 
+}
+#contacto form textarea{
+    background-color: transparent;
+   border: none;
+   border-bottom: 2px solid #389274;
+   width: 100%;
+   height: 100px;
+   padding: 7px o;
+   outline: none;
+   color: #89d4d4; 
+}
+#contacto button{
+    width: 100px;
+    display: inline-block;
+    border: none;
+    background: #1b1bcc;
+    color: #cfedf7;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+/**SECCION RESPONSIVE*/
+@media only screen and (max-width: 700px){
+    header nav{
+        position: initial;
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #1b1bcc;
+        z-index: 99;
+    }
+    nav.responsive a{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font: 30px;
+        color: white;
+    }
+    #inicio .fila{
+        display: block;
+        text-align: center;
+    }
+    #inicio .fila .col{
+        width: 100%;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Proyecto C.V.</title>
+</head>
+<body>
+    <div class="container">
+        <!--ENCABEZADO Y MENU-->
+        <header>
+            <h1 >Edward Pain</h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#estudios" onclick="seleccionar()">Estudios</a>
+                <a href="#trabajos" onclick="seleccionar()">Experiencia Laboral</a>
+                <a href="#otros" onclick="seleccionar()">Estudios Adicionales</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div id="icon-nav" class="nav-responsive" onclick="mostrarOcultarMenu()" >
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!--SECCION INICIO-->
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="imagenes/Edward Pain.jpg">
+                    </div>
+                </div>        
+                <div class="col">
+                    <h2>Edward Pain</h2>        
+                    <ul>
+                        <li>Edad: 45 años</li>
+                        <li>Dirección: 5678 Spring Hill Rd</li>
+                        <li>CP 5784</li>
+                    </ul>
+                    <a href="#contacto" onclick="seleccionar()">Contacto</a>
+                </div>    
+            </div>
+        </section>
+
+        <!--SECCION ESTUDIOS-->
+        <section id="estudios">
+            <div class="fila">
+                <div class="col">
+                    <h3>ESTUDIOS</h3>
+                    <div class="uni">
+                        <p> AÑO: 2002 </p>        
+                        <p> TITULO: abogado </p>
+                        <p> CIUDAD: Cambridge </p>  
+                        <p>UNIVERSIDAD: Harvard  </p>
+                    </div>
+                    <div class="secun">
+                        <p> AÑO: 1995 </p>        
+                        <p> TITULO: Bachiller </p>
+                        <p> CIUDAD: Chicago </p>  
+                        <p>COLEGIO: Chicago College  </p>
+                    </div>
+                    <div class="prim">
+                        <p> AÑO: 1990 </p>         
+                        <p> TITULO: Primario </p>
+                        <p> CIUDAD: Chicago </p>  
+                        <p>COLEGIO: Chicago College  </p>
+                    </div>
+            </div>
+        </section>
+
+        <!--SECCION TRABAJOS-->
+        <section id="trabajos">
+            <div class="fila">
+                <div class="col">
+                    <h3>EXPERIENCIA LABORAL</h3>
+                    <div class="csj">
+                        <p>CORTE SUPREMA DE JUSTICIA: Fiscalía</p>
+                        <p>CARGO OCUPADO: Fiscal</p>
+                        <p>2018-2023</p>
+                    </div>
+                    <div class="csj">
+                        <p>CORTE SUPREMA DE JUSTICIA: Oficina del Defensor Público</p>
+                        <p>CARGO OCUPADO: Abogado Defensor</p>
+                        <p>2015-2018</p>
+                    </div>
+                    <div class="csj">
+                        <p>CORTE SUPREMA DE JUSTICIA: Oficina del Defensor Público</p>
+                        <p>CARGO OCUPADO: Asistente</p>
+                        <p>2013-2015</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ESTUDIOS ADICIONALES-->
+        <section id="otros">
+            <div class="fila">
+                <div class="col">
+                    <h3>ESTUDIOS ADICIONALES</h3>
+                    <ul>
+                        <li>Programador Junior</li>
+                        <li>Oratoria</li>
+                        <li>Análsis Contable</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--CONTACTO-->
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <nav>
+                <ul class="redes-h">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook gradient-text"></i>
+                            <ul class="info">
+                                <li><a>edward@facebook.com</a></li>
+                            </ul> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin gradient-text"></i>
+                            <ul class="info">
+                                <li><a>edward@link.com</a></li>
+                            </ul>               
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-instagram gradient-text"></i>
+                            <ul class="info">
+                                <li><a>edward@instagram.com</a></li>
+                            </ul>               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-envelopes-bulk gradient-text"></i>
+                            <ul class="info">
+                                <li><a>edward@mail.com</a></li>
+                            </ul>               
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            <ul class="info">
+                                <a>5553792</a>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <form action="">
+                <div class="entrada">
+                    <label for="">Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="">Correo</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="">Tema</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section>
+    <script src="function.js"></script>
+    </div>    
+</body>
+</html>
